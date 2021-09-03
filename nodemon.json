@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_USER": "ranjitha",
+        "MONGO_PASSWORD": "task-manager",
+        "MONGO_DB": "tasks"
+    }
+}
