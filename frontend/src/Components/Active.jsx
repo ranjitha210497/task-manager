@@ -1,32 +1,5 @@
 import React from 'react';
-import { CircularProgress } from '@material-ui/core';
-import { Typography } from '@material-ui/core';
-import { PropTypes } from 'prop-types';
-import { Box } from '@material-ui/core';
 import Task from './Task';
-
-function CircularProgressWithLabel(props) {
-    return (
-      <Box position="relative" display="inline-flex">
-        <CircularProgress variant="determinate" {...props} style={{color:"#6CC417", marginTop: "-6px"}}/>
-        <Box
-          top={-5}
-          left={0}
-          bottom={0}
-          right={0}
-          position="absolute"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <Typography variant="caption" component="div" color="textSecondary" style={{fontSize: "10px", fontWeight: "600", position: "relative", left: "3px"}}>{`${Math.round(
-            props.value,
-          )}%`}</Typography>
-        </Box>
-      </Box>
-    );
-  }
-
 
 class Active extends React.Component {
     
